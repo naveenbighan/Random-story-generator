@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Story Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Random Story Generator 🌟</h1>
+        <form action="/generate" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter a name" required>
+            
+            <label for="place">Place:</label>
+            <input type="text" name="place" id="place" placeholder="Enter a place" required>
+            
+            <label for="activity">Activity:</label>
+            <input type="text" name="activity" id="activity" placeholder="Enter an activity" required>
+            
+            <label for="object">Object:</label>
+            <input type="text" name="object" id="object" placeholder="Enter an object" required>
+            
+            <button type="submit">✨ Generate Story ✨</button>
+        </form>
+        
+        {% if story %}
+            <div class="story">
+                <h2>Your Story:</h2>
+                <p>{{ story }}</p>
+            </div>
+        {% endif %}
+    </div>
+    <footer>
+        Built with ❤️ by Naveen
+    </footer>
+</body>
+</html>
