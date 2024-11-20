@@ -25,7 +25,9 @@
 - Python 3.x
 - Install dependencies:
   ```bash
-  git clone https://github.com/naveenbighan/Random-story-generator.git
-  pip install -r requirements.txt
+
+ git clone https://github.com/naveenbighan/Random-story-generator.git
+  
+ pip install -r requirements.txt
 🤝 Contributions
   🎉 Contributions are welcome! Fork this repository, make your improvements, and submit a pull request.
