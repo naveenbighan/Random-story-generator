@@ -26,3 +26,6 @@
 - Install dependencies:
   ```bash
   pip install -r requirements.txt
+
+  🤝 Contributions
+    🎉 Contributions are welcome! Fork this repository, make your improvements, and submit a pull request.
